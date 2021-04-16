@@ -1,24 +1,31 @@
 h1 {
-background-color: lightblue; 
-text-align: center;}
+color: purple; 
+text-align: center;
+font-size: 100px;
+background-color: black;
+}
 
-li {
-list-style-type: none; 
-margin: 0 2vw;}
+a:link, a:visited {
+  background-color: black;
+  color: purple;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+}
 
-a:hover{
-background-color: #C6E9FF; 
-text-decoration: none;}
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
 
-nav{
-width: 100w;
-background-color: #D6EFFF;}
-
-ul{
-margin: 0; 
-padding:0; 
-display: flex;}
+a:active {
+  color: white;
+}
 
 body{
-margin:0
+text-align: center;
+background-color: hotpink;
+margin:0;
 }
