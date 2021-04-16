@@ -24,6 +24,31 @@ a:active {
   color: white;
 }
 
+p{
+  font-size:30px;
+}
+
+
+h2{
+  font-size:30px;
+}
+
+h3{
+  font-size:30px;
+}
+
+.rp{
+  position: absolute;
+  top: 20px;
+  right: 140px;
+}
+
+.lp{
+  position: absolute;
+  top: 20px;
+  left: 140px;
+}
+
 body{
 text-align: center;
 background-color: hotpink;
