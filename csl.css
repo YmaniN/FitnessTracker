@@ -2,11 +2,11 @@ h1 {
 color: purple; 
 text-align: center;
 font-size: 100px;
-background-color: black;
+
 }
 
 a:link, a:visited {
-  background-color: black;
+  
   color: purple;
   padding: 20px 35px;
   text-align: center;
@@ -16,7 +16,7 @@ a:link, a:visited {
 }
 
 a:hover {
-  color: hotpink;
+  color: black;
   text-decoration: underline;
 }
 
@@ -51,6 +51,6 @@ h3{
 
 body{
 text-align: center;
-background-color: hotpink;
+background-color: gold;
 margin:0;
 }
