@@ -3,6 +3,7 @@
     <!-- metadata, scripts, etc, -->
     <title>Fitness App.html</title>
     <link rel="stylesheet" href="csl.css">
+	<script src = "store.js" async></script>
   </head>
 
   <body>
@@ -20,8 +21,10 @@
     <img src="logo.png" alt="fitness picture" class="lp" style='position:absolute; top:0; left:0;' width='' height='' alt='' ><br>
 
 <section class = "container content-section">
-	<h2 class = "section-header">Tank Top</h2>
+	<h2 class = "section-header">Merchandise</h2> 
 	<div class = "shop-items">
+	<div class = "shop-item">
+		<span class = "shop-item-title">Tank Top</span>
 		<div class = "shop-item">
 		<img class = "shop-item-image" src = "tank.png">
 		<div class = "shop-item-details">
@@ -29,54 +32,60 @@
 <button class = "btn btn-primary shop-item-button" type = "button">Add To Cart</button>
 </div>
 </div>
-	<h2 class = "section-header">Kids Tank</h2>
+	<!--<h2 class = "section-header">Kids Tank</h2>-->
 	<div class = "shop-items">
 		<div class = "shop-item">
+		<span class = "shop-item-title">Kids</span>
 		<img class = "shop-item-image" src = "kids.png">
 		<div class = "shop-item-details">
 		   <span class= "shop-item-price">$9.99</span>
 <button class = "btn btn-primary shop-item-button" type = "button">Add To Cart</button>
 </div>
 </div>
-	<h2 class = "section-header">Hoodie</h2>
+	<!--<h2 class = "section-header">Hoodie</h2>-->
 	<div class = "shop-items">
 		<div class = "shop-item">
+		<span class = "shop-item-title">Hoodie</span>
 		<img class = "shop-item-image" src = "hoodie.png">
 		<div class = "shop-item-details">
 		   <span class= "shop-item-price">$45.99</span>
 <button class = "btn btn-primary shop-item-button" type = "button">Add To Cart</button>
 </div>
 </div>
-	<h2 class = "section-header">Reflective Shirt</h2>
+	<!--<h2 class = "section-header">Reflective Shirt</h2>-->
 	<div class = "shop-items">
 		<div class = "shop-item">
+		<span class = "shop-item-title">Reflective Shirt</span>
 		<img class = "shop-item-image" src = "construction.png">
 		<div class = "shop-item-details">
 		   <span class= "shop-item-price">$50.00</span>
 <button class = "btn btn-primary shop-item-button" type = "button">Add To Cart</button>
 </div>
 </div>
-	<h2 class = "section-header">Beanie</h2>
+	<!--<h2 class = "section-header">Beanie</h2>-->
 	<div class = "shop-items">
 		<div class = "shop-item">
+		<span class = "shop-item-title">Beanie</span>
 		<img class = "shop-item-image" src = "beanie.png">
 		<div class = "shop-item-details">
 		   <span class= "shop-item-price">$12.99</span>
 <button class = "btn btn-primary shop-item-button" type = "button">Add To Cart</button>
 </div>
 </div>
-	<h2 class = "section-header">Waterbottle</h2>
+	<!--<h2 class = "section-header">Waterbottle</h2>-->
 	<div class = "shop-items">
 		<div class = "shop-item">
+		<span class = "shop-item-title">Waterbottle</span>
 		<img class = "shop-item-image" src = "waterbottle.png">
 		<div class = "shop-item-details">
 		   <span class= "shop-item-price">$23.99</span>
 <button class = "btn btn-primary shop-item-button" type = "button">Add To Cart</button>
 </div>
 </div>
-	<h2 class = "section-header">Flag</h2>
+	<!--<h2 class = "section-header">Flag</h2>-->
 	<div class = "shop-items">
 		<div class = "shop-item">
+		<span class = "shop-item-title">Flag</span>
 		<img class = "shop-item-image" src = "flag.png">
 		<div class = "shop-item-details">
 		   <span class= "shop-item-price">$19.99</span>
@@ -84,7 +93,28 @@
 </div>
 </div>
 
+</section>
+	<section class = "container content-section">
+	<h2 class = "section-header">Cart</h2
+	<div class = "cart-row">
+		<span class = "cart-item cart header cart-column">Item</span>
+		<span class = "cart-price cart-header cart-column">Price</span>
+		<span class = "cart-quantity cart-header cart-column">Quantity</span>
+
+</div>
+
+<div class = "cart-items">
+</div>
+<div class = "cart-total">
+	<strong class = "cart-total-title">Total</strong>
+	<span class = "cart-total-price">$0</span>
+</div>
+
+<button class = "btn btn-primary btn-purchase" type = "button">Purchase</button>
+</section>
       <p>Thanks for shopping with us!</p>
+
+
 
 </body>
 </html>
