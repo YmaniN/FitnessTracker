@@ -1,22 +1,14 @@
 <?php
 $servername = "localhost";
-$user = "username";
-$password = "password";
+$user = "student";
+$password = "CompSci364";
 
 // Create connection
-$conn = new mysqli($servername, $user, $password);
+$conn = new mysqli($servername, $user, $password, "student");
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// Create database
-$sql = "CREATE DATABASE FitnessModelUserTable.sql";
-if ($conn->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $conn->error;
-}
 
-$conn->close();
 ?>
