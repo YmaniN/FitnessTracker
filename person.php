@@ -3,8 +3,7 @@
 <html>
   <body>
 		
-    <?php echo "Hello, World!"; ?>
+    <?php echo "Hello, World!2"; ?>
    
   </body>
 </html>
-
