@@ -16,8 +16,8 @@ DROP TABLE if exists Login;
 
 CREATE TABLE Login
 (
-username varchar(25),
-user_password varchar(25),
+username VARCHAR(25),
+user_password VARCHAR(25),
 CONSTRAINT pk_login PRIMARY KEY (username)
 );
 
@@ -27,7 +27,7 @@ CREATE TABLE Avatar
   id integer NOT NULL,
   age integer,
   gender char,
-  body_type varchar(10),
+  body_type VARCHAR(10),
   CONSTRAINT pk_avatar PRIMARY KEY (id)
 );
 
@@ -39,11 +39,11 @@ CREATE TABLE Avatar
 CREATE TABLE Coach
 (
   coach_id integer NOT NULL,
-  first_name varchar(25),
-  last_name varchar(25),
+  first_name VARCHAR(25),
+  last_name VARCHAR(25),
   coaching_experience integer,
-  intensity varchar(25),
-  location varchar(25),
+  intensity VARCHAR(25),
+  location VARCHAR(25),
   CONSTRAINT pk_coach PRIMARY KEY (coach_id)
 );
 
@@ -55,7 +55,7 @@ CREATE TABLE Coach
 CREATE TABLE WorkoutRating
 (
   id integer NOT NULL,
-  wellness varchar(25),
+  wellness VARCHAR(25),
   body_feeling integer,
   CONSTRAINT pk_rating PRIMARY KEY (id)
 );
@@ -67,9 +67,9 @@ CREATE TABLE WorkoutRating
 CREATE TABLE AthUser
 (
   id integer NOT NULL,
-  username varchar(25),
-  user_password varchar(25),
-  phone_number varchar(15),
+  username VARCHAR(25),
+  user_password VARCHAR(25),
+  phone_number VARCHAR(15),
   weight integer,
   height integer,
   CONSTRAINT pk_user PRIMARY KEY (id)
@@ -83,8 +83,8 @@ CREATE TABLE AthUser
 CREATE TABLE WorkoutPlan
 (
   id integer NOT NULL,
-  body_type varchar(25) NOT NULL,
-  workout varchar(25),
+  body_type VARCHAR(25) NOT NULL,
+  workout VARCHAR(25),
   reps integer,
   sets integer,
   weight integer,
@@ -98,9 +98,9 @@ CREATE TABLE WorkoutPlan
 CREATE TABLE WorkoutSession
 (
   id integer NOT NULL,
-  date varchar(25),
+  date VARCHAR(25),
   time integer,
-  location varchar(25),
+  location VARCHAR(25),
   CONSTRAINT pk_workoutsession PRIMARY KEY (id)
 );
 

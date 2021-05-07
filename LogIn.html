@@ -2,7 +2,6 @@
 
 <html>
   <head>
-
     <!-- metadata, scripts, etc, -->
     <title>Fitness App.html</title>
 
@@ -10,9 +9,10 @@
   </head>
 
   <body>
-		
+
     <!-- content of webpage -->
     <h1>Welcome Back!</h1> 
+<?php include("LogIn.php"); ?>
       <a href="About.html">About</a>
       <a href="ContactUs.html">Contact</a>
       <a href="Store.html">Store</a><br>
@@ -20,31 +20,18 @@
       <a href="LogIn.html">Log in</a><br>
       <p>Hey loyal fitness app user go ahead and log in!</p>
 
-	<div class = "title">Workout EX</div>
-	<form name = "login" method = "post" action = "connect.php">
-Name: <input type = "text" name = "name"></br>
-Password: <input type = "text" name = "password"></br>
+
+
+	<form method="POST" 
+  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?">
+
+<input type = "text" id = "username" placeholder = "username"></br>
+<input type = "text" id = "password" placeholder = "password"></br>
 <input type = "submit" value = "Login">
-</div>
-<div class = "sign-up">
+
+<div class = "sign-up"></div>
 <a href = "SignUp.html">New to Workout EX? Sign up here!</a>
 </form>
-
-<script>
-function validate(){
-var name = document.login.name.value;
-var password = document.login.password.value;
-
-if(name == "JohnGabe" && password == "FTN789_Johnnyboy"){
-alert("validation succeeded");
-location.href = "person.html";
-}
-else{
-alert("validation failed");
-location.href = "SignUp.html";
-}
-}
-</script>
 
     <img src="logo.png" alt="fitness picture" class="rp" style='position:absolute; top:0; right:0;' width='' height='' alt=''><br>
     <img src="logo.png" alt="fitness picture" class="lp" style='position:absolute; top:0; left:0;' width='' height='' alt=''><br>
