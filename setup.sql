@@ -10,16 +10,6 @@ DROP TABLE if exists Coach;
 
 DROP TABLE if exists Avatar;
 
-DROP TABLE if exists Login; 
-
--- Table: Login
-
-CREATE TABLE Login
-(
-username VARCHAR(25),
-user_password VARCHAR(25),
-CONSTRAINT pk_login PRIMARY KEY (username)
-);
 
 -- Table: Avatar
 CREATE TABLE Avatar
@@ -105,12 +95,6 @@ CREATE TABLE WorkoutSession
 );
 
 -- add explicit insert statements
-INSERT INTO Login Values ('JamesLee_14', 'password1234');
-INSERT INTO Login Values ('Addy', 'Smyth123_Addy');
-INSERT INTO Login Values ('JohnGabe', 'FTN789_Johnnyboy');
-INSERT INTO Login Values ('Sammy-Adams','Sam_Not_Adams!');
-INSERT INTO Login Values ('GabNoDouglas', 'GabrielleLovesChickens45');
-INSERT INTO Login Values ('BaddyMaddy', 'MegsKnees_GetLow23!');
 
 INSERT INTO Avatar Values ('101', '45', 'M', 'average');
 INSERT INTO Avatar VALUES ('102', '32', 'F', 'unathletic');

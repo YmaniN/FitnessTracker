@@ -1,28 +1,43 @@
-<?php
-require "connect.php";
-//$readfile('LogIn.html');
-//$readfile('About.html');
-//$readfile('ContactUs.html');
-//$readfile('SignUp.html');
-//$readfile('Store.html');
-//$readfile('person.html');
 
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+  <html>
+  <head>
+    <!-- metadata, scripts, etc, -->
+    <title>Fitness App.html</title>
 
-$sql_Login = "SELECT * FROM Login WHERE username = '$username' AND password = '$password'");
-$res_Login_u = mysqli_query($conn, $sql_Login_u);
+    <link rel="stylesheet" href="csl.css">
+  </head>
 
-if($username == NULL OR $password == NULL){
-	$result = "You must fill in the login information in order to access a personalized page.";
-	print($result);
-}else if(mysql_num_rows($sql_Login) != 0){
-	$result = "Welcome back! Let's log those workouts!";
-	print($result);
-} else {
+  <body>
 
-	$result = "Wrong information. Try again or use the sign up link";
-	print($result);
-?>
+    <!-- content of webpage -->
+    <h1>Welcome Back!</h1> 
+      <a href="About.html">About</a>
+      <a href="ContactUs.html">Contact</a>
+      <a href="Store.html">Store</a><br>
+      <a href="SignUp.php">Sign up</a>
+      <a href="LogIn.php">Log in</a><br>
+      <p>Hey loyal fitness app user go ahead and log in!</p>
+
+
+
+<form action = "controll.php" method = "POST">
+
+<input type = "hidden" name = "action" value = "login">
+<input type = "text" id = "username" placeholder = "Username"><br>
+<input type = "text" id = "user_password" placeholder = "Password"><br>
+<input type = "submit" value = "Login">
+
+<div class = "sign-up"></div>
+<a href = "SignUp.php">New to Workout EX? Sign up here!</a>
+</form>
+
+    <img src="logo.png" alt="fitness picture" class="rp" style='position:absolute; top:0; right:0;' width='' height='' alt=''><br>
+    <img src="logo.png" alt="fitness picture" class="lp" style='position:absolute; top:0; left:0;' width='' height='' alt=''><br>
+  </body>
+</html>
+
+
+
+
 
